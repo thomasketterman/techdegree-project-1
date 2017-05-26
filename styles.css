@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +11,39 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+#gallery {
+  margin: 25px;
+  padding: 100px;
+  list-style: none;
+  background-color: #ECEBEB;
+}
+
+#gallery li  {
+  display: inline-block;
+  width: 45%;
+  margin: 2%;
+  color: black;
+}
+
+#gallery a {
+  color: black;
+
+}
+
+#opener {
+  text-align: center;
+  font-size: 1.75em;
+  padding: 0;
+}
+
+
 /* Link Styles */
 
 a {
@@ -51,13 +84,17 @@ a:hover {
 .nav a {
   transition: all .5s;
 }
-.nav a:hover {
+
+
+
+.nav a.selected, a:hover {
   color: white
 }
 
+
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/plane.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -69,8 +106,8 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 13%;
+  border: 2px solid grey;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -83,10 +120,10 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #e5eef4;
+  color: black;
 }
 .card {
   margin: 30px;
@@ -95,7 +132,7 @@ header .profile-image:hover {
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: all .5s;
 }
 .card:hover {
@@ -120,10 +157,12 @@ ul.skills {
   background: #0399ff;
 }
 
+
+
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 40px 0;
 }
 
 footer .copyright {
@@ -169,10 +208,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +243,3 @@ a.social:hover {
   }
 
 }
-
